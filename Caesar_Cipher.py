@@ -63,8 +63,8 @@ def translateMessage(mode, message, key):
 
 
 mode = getMode()
-message = translateMessage()
 key = getKey()
+message = getMessage()
 
 print('Your translated text is:')
 print(translateMessage(mode, message, key))
