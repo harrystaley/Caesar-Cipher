@@ -1,50 +1,71 @@
 # Caesar-Cipher
 
-## Project Overview
+## Overview
+The Caesar-Cipher project is a Python implementation of the classic Caesar Cipher encryption technique. This repository adheres to PEP8 standards, ensuring that the code is clean and maintainable. The implementation is straightforward, making it easy for beginners and seasoned developers alike to understand and utilize this cryptographic method. This project is inspired by various community discussions and examples, aiming to provide a practical approach to learning about encryption through a historical cipher.
 
-The Caesar-Cipher repository is a Python implementation of the classic Caesar Cipher encryption technique. This project is designed to be straightforward and easy to understand, making it a great resource for those who are new to encryption or want to learn more about it. The code is written in Python 3 and follows the PEP8 style guide, ensuring it is clean and readable. Topics covered include encryption, Python, and Python3.
-
-## Setup & Installation
-
-To use the Caesar-Cipher, you will need to have Python 3 installed on your machine. If you don't have Python installed, you can download it from the official website: https://www.python.org/downloads/.
-
-Once you have Python installed, you can clone this repository to your local machine:
-
-```bash
-git clone https://github.com/username/Caesar-Cipher.git
+### Project Structure
+```
+Caesar-Cipher/
+│
+├── caesar_cipher.py    # Main module containing the implementation of the Caesar Cipher
+├── requirements.txt    # File containing list of dependencies to install
+├── examples.py         # Examples demonstrating how to use the Caesar Cipher module
+└── README.md           # Documentation about the project
 ```
 
-Navigate into the cloned repository:
+## Setup and Installation
 
-```bash
-cd Caesar-Cipher
+### Prerequisites
+- Python 3.x
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Caesar-Cipher.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Caesar-Cipher
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+To use the Caesar Cipher, you can import the `caesar_cipher` function from the `caesar_cipher.py` file and use it to encrypt or decrypt messages. Here is a basic example:
+
+```python
+from caesar_cipher import caesar_cipher
+
+# Encrypting a message
+encrypted_message = caesar_cipher("Hello, World!", 3)
+print("Encrypted:", encrypted_message)
+
+# Decrypting a message
+decrypted_message = caesar_cipher(encrypted_message, -3)
+print("Decrypted:", decrypted_message)
 ```
 
-You are now ready to run the program!
+For more detailed examples, refer to the `examples.py` file.
 
-## Usage Examples
+## Contribution Guidelines
 
-To use the Caesar-Cipher, you can run the main file from your command line:
+Contributions to the Caesar-Cipher project are welcome! Here's how you can contribute:
 
-```bash
-python main.py
-```
+1. Fork the repository.
+2. Create a new branch for each feature or improvement.
+3. Add or update tests as appropriate.
+4. Ensure your code adheres to PEP8 standards.
+5. Submit a pull request with comprehensive description of changes.
 
-Then, follow the prompts to enter the text you want to encrypt and the key you want to use for the encryption. The program will output the encrypted text.
-
-## Contributing
-
-We welcome contributions from the community! To contribute:
-
-1. Fork this repository.
-2. Create a new branch for your changes: `git branch new-feature`
-3. Check out to your branch: `git checkout new-feature`
-4. Make your changes and commit them: `git commit -m "Add new feature"`
-5. Push the branch: `git push origin new-feature`
-6. Open a pull request.
-
-Before contributing, please make sure your code is clean, readable, and follows the PEP8 style guide.
+For substantial changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+Feel free to explore the repository, and we appreciate your interest in contributing to the Caesar-Cipher project!
